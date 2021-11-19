@@ -1,0 +1,48 @@
+$bg-color: #d0e0e0;
+$txt-color: #333;
+*,
+*::after,
+*::before {
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  //   font-size: 10px;
+}
+
+body {
+  color: $txt-color;
+  background-color: $bg-color;
+  margin: 0 auto;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  line-height: 1.6;
+}
+a {
+  color: $txt-color;
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0 auto;
+  padding: 0 auto;
+}
+img {
+  margin: 0;
+  background: goldenrod;
+  max-width: 140rem;
+  min-width: fit-content;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  max-width: 140rem;
+}
+.split {
+  display: inline-block;
+}
