@@ -6,10 +6,7 @@ $txt-color: #333;
   margin: 0;
   box-sizing: border-box;
 }
-html {
-  //   font-size: 10px;
-}
-
+input{all :unset}
 body {
   color: $txt-color;
   background-color: $bg-color;
@@ -29,20 +26,4 @@ h4,
 p {
   margin: 0 auto;
   padding: 0 auto;
-}
-img {
-  margin: 0;
-  background: goldenrod;
-  max-width: 140rem;
-  min-width: fit-content;
-}
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 4rem;
-  max-width: 140rem;
-}
-.split {
-  display: inline-block;
 }
