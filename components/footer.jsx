@@ -1,10 +1,9 @@
-import styles from "../styles/Home.module.css";
 const Footer = () => {
   return (
-    <footer className={styles.footer}>
+    <footer className="">
       <div>
         <h3></h3>
-      </div>{" "}
+      </div>
     </footer>
   );
 };

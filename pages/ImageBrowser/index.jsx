@@ -1,4 +1,3 @@
-import axios from "axios";
 import React, { useState } from "react";
 import ImageList from "../../components/ImageList";
 import SearchBar from "../../components/SearchBar";
@@ -7,7 +6,7 @@ import unsplashAPI from "../api/unsplashAPI";
 const ImageBrowser = () => {
   const [images, setImages] = useState([]);
 
-  let onTermSubmit = async (term) => {
+  const onTermSubmit = async (term) => {
     const response = await unsplashAPI
       .get("/search/photos/", {
         params: { query: term },

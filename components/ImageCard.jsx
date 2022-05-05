@@ -1,10 +1,13 @@
 import { Image } from "next/image";
 import { useEffect, useRef, useState } from "react";
+
 const ImageCard = () => {
   const [spans, setSpans] = useState(spans);
   const [height, setHeight] = useState(100);
   const [width, setWidth] = useState(100);
+
   imageRef = useRef();
+
   useEffect(() => {
     imageRef.current.addEventListener("load", this.setSpans);
     console.log({ imageRef });

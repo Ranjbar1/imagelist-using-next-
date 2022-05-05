@@ -6,7 +6,7 @@ const ImageList = ({ images }) => {
     <>
       <div className="image-grid">
         {images.map((image) => {
-          return <ImageCard key={image.id}></ImageCard>;
+          return <ImageCard key={image.id} />;
         })}
       </div>
     </>

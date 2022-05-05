@@ -1,9 +1,10 @@
 import React from "react";
+import { Image } from "next/image";
 
 const VideoItem = ({ video }) => {
   return (
     <div className="container">
-      <img
+      <Image
         src={video.snippet.thumbnails.medium.url}
         alt={video.snippet.title}
       />

@@ -2,10 +2,12 @@ import React, { useState } from "react";
 
 const SearchBar = ({ onFormSubmit }) => {
   const [term, setTerm] = useState("");
+
   const onSubmit = (e) => {
     e.preventDefault();
     onFormSubmit(term);
   };
+
   return (
     <div className="flex">
       <form onSubmit={onSubmit} className="search">
