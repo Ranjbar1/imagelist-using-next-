@@ -17,7 +17,7 @@ const SearchBar = ({ onFormSubmit }) => {
             value={term}
             onChange={(e) => setTerm(e.target.value)}
           />
-          <div className="text">You are looking for :{this.state.term}</div>
+          <div className="text">You are looking for :{term}</div>
         </div>
       </form>
     </div>
