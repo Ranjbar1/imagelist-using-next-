@@ -7,7 +7,7 @@ import unsplashAPI from "../api/unsplashAPI";
 const ImageBrowser = () => {
   const [images, setImages] = useState([]);
 
-  let onSearchSubmition = async (term) => {
+  let onTermSubmit = async (term) => {
     const response = await unsplashAPI
       .get("/search/photos/", {
         params: { query: term },
@@ -21,7 +21,7 @@ const ImageBrowser = () => {
 
   return (
     <div>
-      <SearchBar onSubmition={onSearchSubmition} />
+      <SearchBar onFormSubmit={onTermSubmit} />
       <ImageList images={images} />
     </div>
   );
