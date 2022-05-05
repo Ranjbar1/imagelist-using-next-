@@ -3,9 +3,7 @@ const Footer = () => {
   return (
     <footer className={styles.footer}>
       <div>
-        <h3>
-          <p>lorem5</p>
-        </h3>
+        <h3></h3>
       </div>{" "}
     </footer>
   );

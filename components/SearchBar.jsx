@@ -8,7 +8,7 @@ class SearchBar extends React.Component {
   };
   render() {
     return (
-      <div>
+      <div className="flex">
         <form onSubmit={this.onFormSubmition} className="search">
           <div className="flex">
             <label>Search for Images !!</label>
