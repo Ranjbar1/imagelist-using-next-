@@ -1,6 +1,7 @@
+import Link from "next/link";
 const Header = () => {
   return (
-    <header className="text-gray-900  sticky mx-0 my-3 font-semibold ">
+    <header className="text-gray-900  sticky mx-0 my-3 font-semibold text-sm">
       <nav className=" flex flex-row justify-around flex-nowrap">
         <ul className="flex space-x-2 py-1 ">
           <li>
@@ -18,7 +19,9 @@ const Header = () => {
           </li>
           <li>
             <div className="item">
-              <span className="text-uppercase">Contact Me </span>
+              <span className="">
+                <Link href="./about">Contact Me</Link>
+              </span>
             </div>
           </li>
           <li>
