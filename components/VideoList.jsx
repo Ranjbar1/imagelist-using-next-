@@ -9,7 +9,7 @@ const VideoList = ({ videos }) => {
     return <VideoItem key={video.snippet.title} video={video} />;
   });
 
-  return <div>{List}</div>;
+  return <div className="flex flex-col mx-2 my-1 ">{List}</div>;
 };
 
 export default VideoList;
