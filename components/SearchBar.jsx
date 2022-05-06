@@ -9,13 +9,15 @@ const SearchBar = ({ onFormSubmit }) => {
   };
 
   return (
-    <div className="flex">
-      <form onSubmit={onSubmit} className="search">
-        <div className="flex">
-          <label>Search for Images !!</label>
+    <div className="border-5 rounded ">
+      <form onSubmit={onSubmit} className="border-3 rounded ">
+        <div className="flex colomn ">
+          <label className="text-bold-3 border-3 rounded">
+            Search for Images !!
+          </label>
           <input
             type="text"
-            className="input text"
+            className=""
             value={term}
             onChange={(e) => setTerm(e.target.value)}
           />

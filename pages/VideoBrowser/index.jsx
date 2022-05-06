@@ -25,7 +25,7 @@ const VideoBrowser = () => {
     setSelectedVideo(video);
   };
   return (
-    <div className="rounded">
+    <div className="rounded border-2">
       <SearchBar onFormSubmit={onTermSubmit} />
       {/* <VideoDetail video={selectedVideo}></VideoDetail> */}
       <VideoList onVideoSelect={onVideoSelect} videos={videos} />{" "}
