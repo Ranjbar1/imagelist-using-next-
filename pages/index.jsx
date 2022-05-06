@@ -3,5 +3,11 @@ import Image from "next/image";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
-  return <div className="rounded border-2">hello</div>;
+  return (
+    <>
+      <div className="flex mr-auto justify-center cursor-pointer">
+        <div className="">asdshello</div>
+      </div>
+    </>
+  );
 }
