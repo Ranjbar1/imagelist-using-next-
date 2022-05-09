@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-
+import VideoDetail from "../../components/VideoDetail";
 import SearchBar from "../../components/SearchBar";
 import VideoList from "../../components/VideoList";
 import youtube from "../api/youtube";
@@ -13,7 +13,7 @@ const VideoBrowser = () => {
   }, []);
 
   const onTermSubmit = async (term) => {
-    const response = await youtube.get("/", {
+    const response = await youtube.get("/search", {
       params: { q: term },
     });
     console.log(response);
@@ -24,10 +24,11 @@ const VideoBrowser = () => {
   const onVideoSelect = (video) => {
     setSelectedVideo(video);
   };
+
   return (
     <div className="rounded border-2">
       <SearchBar onFormSubmit={onTermSubmit} />
-      {/* <VideoDetail video={selectedVideo}></VideoDetail> */}
+      <VideoDetail video={selectedVideo}></VideoDetail>
       <VideoList onVideoSelect={onVideoSelect} videos={videos} />{" "}
     </div>
   );

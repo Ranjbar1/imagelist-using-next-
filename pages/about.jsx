@@ -7,7 +7,11 @@ const Contact = () => {
       <div className="flex">
         <div className="container">
           <div className="img">
-            <Image src="/public/icons/icons8_gmail.ico" alt="gmail account " />
+            <Image
+              layout="fill"
+              src="/public/icons/icons8_gmail.ico"
+              alt="gmail account "
+            />
           </div>
           <div className="method-contact">
             reach out to my via Gmail:
@@ -15,13 +19,17 @@ const Contact = () => {
               href="email:98ranjbar@gmail.com"
               alt="my gmail at 98ranjbar@gmail.com"
             >
-              Write down here!{" "}
+              Write down here!
             </Link>
           </div>
         </div>
         <div className="container">
           <div className="img">
-            <Image src="/public/icons/icons8_gmail.ico" alt="gmail account " />
+            <Image
+              layout="fill"
+              src="/public/icons/icons8_gmail.ico"
+              alt="gmail account "
+            />
           </div>
           <div className="method-contact">
             reach out to my via Gmail:
@@ -29,13 +37,17 @@ const Contact = () => {
               href="email:98ranjbar@gmail.com"
               alt="my gmail at 98ranjbar@gmail.com"
             >
-              Write down here!{" "}
+              Write down here!
             </Link>
           </div>
         </div>
         <div className="container">
           <div className="img">
-            <Image src="/public/icons/icons8_gmail.ico" alt="gmail account " />
+            <Image
+              layout="fill"
+              src="/public/icons/icons8_gmail.ico"
+              alt="gmail account "
+            />
           </div>
           <div className="method-contact">
             reach out to my via Gmail:
@@ -43,13 +55,17 @@ const Contact = () => {
               href="email:98ranjbar@gmail.com"
               alt="my gmail at 98ranjbar@gmail.com"
             >
-              Write down here!{" "}
+              Write down here!
             </Link>
           </div>
         </div>
         <div className="container">
           <div className="img">
-            <Image src="/public/icons/icons8_gmail.ico" alt="gmail account " />
+            <Image
+              layout="fill"
+              src="/public/icons/icons8_gmail.ico"
+              alt="gmail account "
+            />
           </div>
           <div className="method-contact">
             reach out to my via Gmail:
@@ -57,13 +73,17 @@ const Contact = () => {
               href="email:98ranjbar@gmail.com"
               alt="my gmail at 98ranjbar@gmail.com"
             >
-              Write down here!{" "}
+              Write down here!
             </Link>
           </div>
         </div>
         <div className="container">
           <div className="img">
-            <Image src="/public/icons/icons8_gmail.ico" alt="gmail account " />
+            <Image
+              layout="fill"
+              src="/public/icons/icons8_gmail.ico"
+              alt="gmail account "
+            />
           </div>
           <div className="method-contact">
             reach out to my via Gmail:
@@ -71,7 +91,7 @@ const Contact = () => {
               href="email:98ranjbar@gmail.com"
               alt="my gmail at 98ranjbar@gmail.com"
             >
-              Write down here!{" "}
+              Write down here!
             </Link>
           </div>
         </div>
