@@ -8,11 +8,14 @@ const ImageBrowser = () => {
   const [images, setImages] = useState([]);
 
   const onTermSubmit = async (term) => {
-    const response = await unsplashAPI.get("/search/photos/", {
-      params: { query: term },
-    });
-
+    const response = await unsplashAPI
+      .get("/search/photos/", {
+        params: { query: term },
+      })
+      .then((res) => (images = res.data.results))
+      .catch((err) => console.log(`${err.message} 💣💣💣`));
     images = response.data.results;
+
     setImages(images);
     console.log(images);
   };
