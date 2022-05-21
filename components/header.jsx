@@ -1,7 +1,7 @@
 import Link from 'next/link';
 const Header = () => {
   return (
-    <section classNameName="header-navbar">
+    <section className="header-navbar">
       <div className="navbar-container">
         <div className="navbar-container">
           <Link href="../">
@@ -12,7 +12,7 @@ const Header = () => {
             </a>
           </Link>
           <nav className="nav">
-            <Link href="../">
+            <Link href="/">
               <a className="nav-item">Home</a>
             </Link>
             <Link href="../VideoBrowser">

@@ -10,21 +10,21 @@ const Login = () => {
                   <p className="mb-2 font-medium text-gray-700 uppercase">
                     Lets catch up
                   </p>
-                  <h2 className="text-5xl font-bold text-gray-900 xl:text-6xl">
+                  <h2 className="text-3xl font-bold lg:text-5xl md:text-4xl text-gray-900 xl:text-6xl ">
                     Abolfazl Naser Ranjbar, React and Next.js Engineer
                   </h2>
                 </div>
-                <p className="text-2xl text-gray-700">
+                <p className="text-base max-w-2xl md:text-lg lg:text-xl text-gray-700 ">
                   Weve created a simple formula to follow in order to gain more
                   out of your business and your application. Advanced JavaScript
                   and TS ES9+,React SPA,Next.js Multipage Apps.
                 </p>
-                <p className="text-2xl text-gray-700">
+                <p className="text-base max-w-2xl md:text-lg lg:text-xl text-gray-700 ">
                   Ive gained exprience Designing Mobile-First Fully Responsive
                   UI/UX with Tailwind Css , Material UI Mui5 at Enterprise
                   Scale.
                 </p>
-                <a href="#_" className="form-cta-btn">
+                <a href="#" className="form-cta-btn self-center  sm:self-start">
                   Get Started
                 </a>
               </div>

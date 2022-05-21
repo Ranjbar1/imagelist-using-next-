@@ -1,5 +1,5 @@
 import axios from 'axios';
-
+console.log(axios);
 const Unsplash = axios.create({
   baseURL: 'https://api.unsplash.com',
   headers: {
