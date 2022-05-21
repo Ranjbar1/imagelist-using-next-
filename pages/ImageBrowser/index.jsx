@@ -2,22 +2,20 @@ import React, { useState, useEffect } from "react";
 
 import ImageList from "../../components/ImageList";
 import SearchBar from "../../components/SearchBar";
-import unsplashAPI from "../api/unsplashAPI";
+import Unsplash from "../api/unsplashAPI";
 
 const ImageBrowser = () => {
   const [images, setImages] = useState([]);
 
   const onTermSubmit = async (term) => {
-    const response = await unsplashAPI
-      .get("/search/photos/", {
-        params: { query: term },
-      })
-      .then((res) => (images = res.data.results))
-      .catch((err) => console.log(`${err.message} 💣💣💣`));
-    images = response.data.results;
-
-    setImages(images);
-    console.log(images);
+    let response = await Unsplash.get("search/photos", {
+      params: {
+        query: term,
+      },
+    });
+    let data = response.json();
+    console.log(response.data);
+    setImages(response.data.results);
   };
 
   return (

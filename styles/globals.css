@@ -2,3 +2,107 @@
 @tailwind components;
 @tailwind utilities;
 /*# sourceMappingURL=globals.css.map */
+
+.nav {
+  @apply flex flex-wrap items-center mb-5 text-base md:mb-0 md:pl-8 md:ml-8 md:border-l md:border-gray-200;
+}
+.nav-item {
+  @apply mr-5 font-medium leading-6 text-gray-600 hover:text-gray-900;
+}
+
+.login-bar {
+  @apply inline-flex items-center ml-5 space-x-6 lg:justify-end;
+}
+
+.login-action {
+  @apply text-base font-medium leading-6 text-gray-600 transition duration-150 ease-in-out hover:text-gray-900;
+}
+.header-navbar {
+  @apply w-full px-8 text-gray-700 bg-white;
+}
+.navbar-container {
+  @apply container flex flex-col flex-wrap items-center justify-between py-5 mx-auto md:flex-row max-w-7xl;
+}
+.navbar-item-logo {
+  @apply flex items-center mb-5 font-medium text-gray-900 lg:w-auto lg:items-center lg:justify-center md:mb-0;
+}
+
+.logo {
+  @apply mx-auto text-xl font-black leading-none text-gray-900 select-none;
+}
+
+/* section 2 HERO Section */
+
+.hero-padds {
+  @apply px-2 py-32 bg-white md:px-0;
+}
+.hero-container {
+  @apply container items-center max-w-6xl px-8 mx-auto xl:px-5;
+}
+.hero-container-flex {
+  @apply flex flex-wrap items-center sm:-mx-3;
+}
+
+.hero-content-wrapper {
+  @apply w-full pb-6 space-y-6 sm:max-w-md lg:max-w-lg md:space-y-4 lg:space-y-8 xl:space-y-9 sm:pr-5 lg:pr-0 md:pb-0;
+}
+.hero-title {
+  @apply text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-4xl lg:text-5xl xl:text-6xl;
+}
+.hero-cta-btn {
+  @apply flex items-center w-full px-6 py-3 mb-3 text-lg text-white bg-indigo-600 rounded-md sm:mb-0 hover:bg-indigo-700 sm:w-auto;
+}
+
+/* testemonial images section 3*/
+
+.testemonial-container {
+  @apply box-border flex flex-col items-center content-center px-8 mx-auto leading-6 text-black border-0 border-gray-300 border-solid md:flex-row max-w-7xl lg:px-16;
+}
+
+.img-container {
+  @apply box-border relative w-full max-w-md px-4 mt-5 mb-4 -ml-5 text-center bg-no-repeat bg-contain border-solid md:ml-0 md:mt-0 md:max-w-none lg:mb-0 md:w-1/2 xl:pl-10;
+}
+/* END OF testemonial images section 3 */
+/* Section 4  */
+/* Sign up and login Form Section 7 START */
+.form-container-bg {
+  @apply relative w-full bg-cover lg:w-6/12 xl:w-7/12 bg-gradient-to-r from-white via-white to-gray-100;
+}
+.font-content-wrapper {
+  @apply relative flex flex-col items-center justify-center w-full h-full px-10 my-20 lg:px-16 lg:my-0;
+}
+.form-cta-btn {
+  @apply inline-block px-8 py-5 text-xl font-medium text-center text-white transition duration-200 bg-blue-600 rounded-lg hover:bg-blue-700;
+}
+
+.form-input {
+  @apply block w-full px-4 py-4 mt-2 text-xl placeholder-gray-400 bg-gray-200 rounded-lg focus:outline-none focus:ring-4 focus:ring-blue-600 focus:ring-opacity-50;
+}
+
+.form-btn-cta {
+  @apply inline-block w-full px-5 py-4 text-lg font-medium text-center text-white transition duration-200 bg-blue-600 rounded-lg hover:bg-blue-700;
+}
+.form-btn-blank {
+  @apply inline-block w-full px-5 py-4 mt-3 text-lg font-bold text-center text-gray-900 transition duration-200 bg-white border border-gray-300 rounded-lg hover:bg-gray-100;
+}
+/* Sign up and login Form Section 7 END */
+
+/* Footer and Refrences Icons Section 8 Start*/
+.footer-container {
+  @apply container flex flex-col items-center px-8 py-8 mx-auto max-w-7xl sm:flex-row;
+}
+
+.footer-logo {
+  @apply text-xl font-black leading-none text-gray-900 select-none logo;
+}
+.footer-copyrights {
+  @apply mt-4 text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l sm:border-gray-200 sm:mt-0;
+}
+.footer-social-icons-row {
+  @apply inline-flex justify-center mt-4 space-x-5 sm:ml-auto sm:mt-0 sm:justify-start;
+}
+
+.footer-icon {
+  @apply text-gray-400 hover:text-gray-500;
+}
+/* Footer and Refrences Icons Section 8 END */

@@ -1,19 +1,19 @@
-import React, { useEffect, useState } from "react";
-import VideoDetail from "../../components/VideoDetail";
-import SearchBar from "../../components/SearchBar";
-import VideoList from "../../components/VideoList";
-import youtube from "../api/youtube";
+import React, { useEffect, useState } from 'react';
+import VideoDetail from '../../components/VideoDetail';
+import SearchBar from '../../components/SearchBar';
+import VideoList from '../../components/VideoList';
+import youtube from '../api/youtube';
 
 const VideoBrowser = () => {
   const [videos, setVideos] = useState([]);
   const [selectedVideo, setSelectedVideo] = useState(null);
 
   useEffect(() => {
-    onTermSubmit("Cars");
+    onTermSubmit('Cars');
   }, []);
 
-  const onTermSubmit = async (term) => {
-    const response = await youtube.get("/search", {
+  const onTermSubmit = async term => {
+    const response = await youtube.get('/search', {
       params: { q: term },
     });
     console.log(response);
@@ -21,15 +21,15 @@ const VideoBrowser = () => {
     setSelectedVideo(response.data.items[0]);
   };
 
-  const onVideoSelect = (video) => {
+  const onVideoSelect = video => {
     setSelectedVideo(video);
   };
 
   return (
-    <div className="rounded border-2">
+    <div className="">
       <SearchBar onFormSubmit={onTermSubmit} />
       <VideoDetail video={selectedVideo}></VideoDetail>
-      <VideoList onVideoSelect={onVideoSelect} videos={videos} />{" "}
+      <VideoList onVideoSelect={onVideoSelect} videos={videos} />
     </div>
   );
 };

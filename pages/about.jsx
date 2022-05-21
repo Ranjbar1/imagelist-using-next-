@@ -1,6 +1,6 @@
-import react from "react";
-import Image from "next/image";
-import Link from "next/link";
+import react from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
 const Contact = () => {
   return (
     <>
@@ -88,6 +88,7 @@ const Contact = () => {
           <div className="method-contact">
             reach out to my via Gmail:
             <Link
+              type="email"
               href="email:98ranjbar@gmail.com"
               alt="my gmail at 98ranjbar@gmail.com"
             >
